@@ -8,7 +8,7 @@ const FamilyComponent: FC<FamilyType> = ({simpsons}) => {
         <h2 className="block-title">Simpson family</h2>
         <div className="simpsons-block">
             {
-                simpsons.map((simpson) => (<CharacterComponent>{simpson}</CharacterComponent>))
+                simpsons.map((simpson, index) => (<CharacterComponent key={index}>{simpson}</CharacterComponent>))
             }
         </div>
     </div>

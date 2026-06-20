@@ -6,8 +6,9 @@ import "./course-container.css";
 const CourseContainerComponent: FC<CourseContainer> = ({courses}) => {
     return <div className="course-container">
         {
-            courses.map((course) => (
-                <CourseCard title={course.title}
+            courses.map((course, index) => (
+                <CourseCard key={index}
+                            title={course.title}
                             monthDuration={course.monthDuration}
                             hourDuration={course.hourDuration}
                             modules={course.modules}/>))

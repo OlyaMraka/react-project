@@ -9,7 +9,7 @@ const CourseCardComponent: FC<CourseType> = ({title, monthDuration, hourDuration
         <h3 className="course-hourDuration">HourDuration: {hourDuration}</h3>
         <div className="modules-block">
             {
-                modules.map((module) => (<p className="module-title">{module}</p>))
+                modules.map((module, index) => (<p key={index} className="module-title">{module}</p>))
             }
         </div>
     </div>

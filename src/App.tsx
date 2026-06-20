@@ -11,12 +11,12 @@ function App() {
       <>
         <h2>First Task</h2>
         {
-          coursesTitleArray.map((title) => <CourseTitleCard title={title}/>)
+          coursesTitleArray.map((title, index) => <CourseTitleCard key={index} title={title}/>)
         }
         <h2>Second Task</h2>
         {
-          coursesAndDurationArray.map((object) =>
-              <CourseAndDurationCard title={object.title} monthDuration={object.monthDuration}/>)
+          coursesAndDurationArray.map((object, index) =>
+              <CourseAndDurationCard key={index} title={object.title} monthDuration={object.monthDuration}/>)
         }
         <h2>Third Task</h2>
           <FamilyComponent simpsons={simpsons}/>
