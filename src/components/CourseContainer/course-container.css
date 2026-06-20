@@ -1,0 +1,20 @@
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: #FAFAF7;
+}
+
+@media (max-width: 900px) {
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+.course-title-block {
+    --bg: #FEF6DD;
+    --border-accent: #F0C94A;
+    --text: #6B5A23;
+    --shadow: rgba(240, 201, 74, 0.28);
+
+    display: inline-block;
+    padding: 1.1rem 1.6rem;
+    margin: 0.5rem;
+    background: var(--bg);
+    border-left: 4px solid var(--border-accent);
+    border-radius: 14px;
+    box-shadow: 0 4px 14px -4px var(--shadow);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-title-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px -6px var(--shadow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .course-title-block {
+        transition: none;
+    }
+}

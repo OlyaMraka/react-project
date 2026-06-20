@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+.simpson-family-block {
+    --paper-deep: #F3E7C9;
+    --yellow: #FFC83D;
+    --ink: #1B1B2F;
+    --coral: #FF6F59;
+    --teal: #3DCCC7;
+
+    position: relative;
+    padding: 4rem 1.5rem 5rem;
+    background:
+            radial-gradient(var(--ink) 1px, transparent 1.5px) 0 0 / 22px 22px,
+            var(--paper-deep);
+    overflow: hidden;
+}
+
+.block-title {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 3.5rem;
+    font-family: 'Bungee', cursive;
+    font-size: clamp(2rem, 6vw, 3.4rem);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--yellow);
+    -webkit-text-stroke: 3px var(--ink);
+    text-shadow:
+            4px 4px 0 var(--ink),
+            8px 8px 0 var(--coral);
+}
+
+.block-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 480px;
+    height: 480px;
+    background: repeating-conic-gradient(var(--yellow) 0deg 4deg, transparent 4deg 12deg);
+    opacity: 0.35;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(-8deg);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.simpsons-block {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 4rem 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    place-items: start center;
+    align-items: start;
+}
+
+.simpsons-block > * {
+    transform: rotate(0deg);
+}
+.simpsons-block > *:nth-child(3n + 1) {
+    margin-top: 0;
+    transform: rotate(-2deg);
+}
+.simpsons-block > *:nth-child(3n + 2) {
+    margin-top: 1.25rem;
+    transform: rotate(1.5deg);
+}
+.simpsons-block > *:nth-child(3n) {
+    margin-top: 0.4rem;
+    transform: rotate(-1deg);
+}
+
+.simpsons-block > *:hover {
+    z-index: 2;
+}
+
+@media (max-width: 640px) {
+    .simpsons-block {
+        gap: 3rem 1.5rem;
+    }
+    .simpsons-block > * {
+        margin-top: 0;
+        transform: none;
+    }
+    .block-title::before {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .simpsons-block > * {
+        transition: none;
+    }
+}

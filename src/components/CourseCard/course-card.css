@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+.course-card-block {
+    --bg: #F2F8E9;
+    --accent: #8FBC6B;
+    --text: #3F5930;
+    --chip-bg: #E2F0D4;
+    --chip-border: #C5E1A5;
+    --shadow: rgba(143, 188, 107, 0.28);
+
+    max-width: 380px;
+    padding: 1.5rem 1.75rem;
+    margin: 0.5rem;
+    background: var(--bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 16px;
+    box-shadow: 0 4px 14px -4px var(--shadow);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px -6px var(--shadow);
+}
+
+.course-title {
+    margin: 0 0 0.85rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* Durations sit as small pills, side by side */
+.course-monthDuration,
+.course-hourDuration {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0.5rem 0.75rem 0;
+    padding: 0.35rem 0.8rem;
+    background: var(--chip-bg);
+    border: 1px solid var(--chip-border);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.modules-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.module-title {
+    margin: 0;
+    padding: 0.3rem 0.75rem;
+    background: #ffffff;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    font-size: 0.8rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .course-card-block {
+        transition: none;
+    }
+}

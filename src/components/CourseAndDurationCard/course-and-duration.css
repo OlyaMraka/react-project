@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+.course-and-duration-block {
+    --bg: #FDECF1;
+    --border-accent: #F3AFC4;
+    --text: #7A4456;
+    --shadow: rgba(214, 142, 167, 0.25);
+
+    display: inline-block;
+    padding: 1.1rem 1.6rem;
+    margin: 0.5rem;
+    background: var(--bg);
+    border-left: 4px solid var(--border-accent);
+    border-radius: 14px;
+    box-shadow: 0 4px 14px -4px var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-and-duration-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px -6px var(--shadow);
+}
+
+.course-and-duration-block h4 {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .course-and-duration-block {
+        transition: none;
+    }
+}
