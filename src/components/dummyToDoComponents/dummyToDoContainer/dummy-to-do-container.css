@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap');
+
+.dummy-todo-wrapper {
+    margin: 0 auto;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.dummy-todo-wrapper > h2 {
+    margin: 0 0 1.25rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #7A4456;
+}
+
+.additional-info-block {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.todo-total,
+.todo-skip,
+.todo-limit {
+    margin: 0;
+    padding: 0.3rem 0.9rem;
+    background: #FDDDE6;
+    border: 1px solid #FCCFE0;
+    border-radius: 999px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: #9D4B6A;
+}
+
+.dummy-to-do-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+}

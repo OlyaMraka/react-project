@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap');
+
+.dummy-post-wrapper {
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.dummy-post-wrapper > h2 {
+    margin: 0 0 1.25rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #134E4A;
+}
+
+.additional-info-block {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-total,
+.post-skip,
+.post-limit {
+    margin: 0;
+    padding: 0.3rem 0.9rem;
+    background: #CCFBF1;
+    border: 1px solid #99F6E4;
+    border-radius: 999px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: #0D9488;
+}
+
+.dummy-post-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 1rem;
+}

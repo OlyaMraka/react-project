@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Space+Mono&display=swap');
+
+.dummy-todo-card {
+    position: relative;
+    max-width: 340px;
+    padding: 1.25rem 1.5rem;
+    margin: 0.75rem;
+    background: #FFF0F5;
+    border: 1px solid #FCCFE0;
+    border-left: 4px solid #F3AFC4;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(214, 142, 167, 0.1);
+    font-family: 'Inter', system-ui, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.dummy-todo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(214, 142, 167, 0.18);
+}
+
+.dummy-todo-card[data-completed="true"] {
+    border-left-color: #F472B6;
+}
+
+.dummy-todo-card[data-completed="true"] .todo-title {
+    color: #F3AFC4;
+    text-decoration: line-through;
+}
+
+.dummy-todo-card[data-completed="true"] .todo-completed {
+    background: #FCE7F3;
+    color: #BE185D;
+}
+
+.dummy-todo-title {
+    margin: 0 0 0.6rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #7A4456;
+}
+
+.dummy-todo-userId,
+.dummy-todo-id {
+    margin: 0 0 0.25rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #C084A0;
+}
+
+.dummy-todo-completed {
+    display: inline-block;
+    margin-top: 0.6rem;
+    padding: 0.25rem 0.65rem;
+    background: #FDDDE6;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #9D4B6A;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dummy-todo-card {
+        transition: none;
+    }
+}

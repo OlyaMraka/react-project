@@ -1,0 +1,10 @@
+.to-do-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: #F9FAFB;
+    height: 600px;
+    overflow-y: auto;
+}

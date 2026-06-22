@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap');
+
+.comment-block {
+    --accent: #EAB308;
+    --text-main: #111827;
+    --text-muted: #6B7280;
+    --bg: #FEFCE8;
+    --border: #FEF08A;
+    --shadow: rgba(234, 179, 8, 0.15);
+
+    max-width: 360px;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px var(--shadow);
+    font-family: 'Inter', system-ui, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comment-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.block-title {
+    margin: 0 0 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.comment-ids {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.comment-ids h3 {
+    margin: 0;
+    padding: 0.2rem 0.6rem;
+    background: #FEF9C3;
+    border-radius: 999px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    color: #854D0E;
+    font-weight: 400;
+}
+
+.comment-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-bottom: 0.75rem;
+}
+
+.comment-author h3 {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.comment-content {
+    margin: 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .comment-block {
+        transition: none;
+    }
+}
