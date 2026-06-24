@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+.additional-menu-component {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 2rem;
+    background: #F8FAFC;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.additional-menu-block {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.35rem;
+    background: #ffffff;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.additional-menu-block li a {
+    display: inline-block;
+    padding: 0.55rem 1.4rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #64748B;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.additional-menu-block li a:hover {
+    transform: translateY(-1px);
+}
+
+.additional-menu-block li:nth-child(1) a:hover,
+.additional-menu-block li:nth-child(1) a.active {
+    background: #F0FDF4;
+    color: #16A34A;
+}
+
+.additional-menu-block li:nth-child(2) a:hover,
+.additional-menu-block li:nth-child(2) a.active {
+    background: #F5F3FF;
+    color: #7C3AED;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .additional-menu-block li a {
+        transition: none;
+    }
+}
