@@ -1,0 +1,65 @@
+.post-block {
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: border-color 0.15s ease;
+}
+
+.post-block:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Мета-рядок з бейджами замість сухих h3 */
+.post-block::before {
+    /* Бейджі рендеряться через JS нижче — тут лише fallback-порожньо */
+}
+
+.post-id,
+.post-userId {
+    display: inline-flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: 3px 9px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.post-id {
+    background: #EEEDFE;
+    color: #3C3489;
+}
+
+.post-userId {
+    background: #E1F5EE;
+    color: #0F6E56;
+}
+
+.post-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.45;
+    text-transform: capitalize;
+}
+
+.post-block hr,
+.post-divider {
+    height: 0.5px;
+    background: rgba(0, 0, 0, 0.08);
+    border: none;
+    margin: 0;
+}
+
+.post-body {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.65;
+    margin: 0;
+}

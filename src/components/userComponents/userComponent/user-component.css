@@ -1,0 +1,101 @@
+.user-info-block {
+    background: white;
+    border: 0.5px solid rgba(0,0,0,0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* Шапка картки — перший блок відіграє роль header */
+.user-main-info-block {
+    padding: 1.25rem 1.25rem 1rem;
+    border-bottom: 0.5px solid rgba(0,0,0,0.08);
+}
+
+.user-main-info-block h2,
+.user-address-info h2,
+.user-company-info h2 {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #888;
+    margin: 0 0 10px;
+}
+
+.user-id {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.user-name {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 2px;
+}
+
+.user-username {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.user-phone,
+.user-email,
+.user-website {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #555;
+    padding: 3px 0;
+}
+
+.user-address-info,
+.user-company-info {
+    padding: 0.85rem 1.25rem;
+    border-top: 0.5px solid rgba(0,0,0,0.08);
+}
+
+.address-street,
+.address-suite,
+.address-city,
+.address-zipcode {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    padding: 2px 0;
+}
+
+.company-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #E1F5EE;
+    color: #0F6E56;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+}
+
+.company-catch-phrase {
+    display: block;
+    font-size: 13px;
+    font-style: italic;
+    color: #666;
+    line-height: 1.5;
+}
+
+.company-bs {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 4px;
+}

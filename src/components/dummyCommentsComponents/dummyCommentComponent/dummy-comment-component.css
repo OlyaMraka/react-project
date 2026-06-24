@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap');
+
+.dummy-component-block {
+    --accent: #F59E0B;
+    --accent-light: #FEF3C7;
+    --bg: #FFFBEB;
+    --border: #FDE68A;
+    --text-main: #78350F;
+    --text-muted: #B45309;
+    --shadow: rgba(245, 158, 11, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px var(--shadow);
+    font-family: 'Inter', system-ui, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dummy-component-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.dummy-component-id,
+.dummy-component-postid {
+    margin: 0;
+    padding: 0.2rem 0.6rem;
+    background: var(--accent-light);
+    border-radius: 999px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.dummy-component-likes {
+    margin: 0 0 0 auto;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.dummy-component-likes::before {
+    content: "♥ ";
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.65rem 0.85rem;
+    background: var(--accent-light);
+    border-radius: 8px;
+}
+
+.comment-user-id {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+.comment-user-username {
+    margin: 0;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.comment-user-fullname {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.dummy-comment-body {
+    margin: 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.83rem;
+    color: #92400E;
+    line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dummy-component-block {
+        transition: none;
+    }
+}
