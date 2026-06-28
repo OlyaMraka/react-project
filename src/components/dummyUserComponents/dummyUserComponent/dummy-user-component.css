@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.dummy-user-block {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 0.8fr;
+    max-width: 1400px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #E2E8F0;
+    background: white;
+    box-shadow:
+            0 4px 12px rgba(15, 23, 42, 0.05),
+            0 12px 32px rgba(15, 23, 42, 0.08);
+    transition: all 0.25s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.dummy-user-block:hover {
+    transform: translateY(-4px);
+    box-shadow:
+            0 8px 20px rgba(15, 23, 42, 0.08),
+            0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.dummy-user-main-info,
+.dummy-user-contact-info,
+.dummy-user-company-info,
+.dummy-user-additional-data {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dummy-user-main-info {
+    background: #F8FAFF;
+    border-right: 1px solid #E2E8F0;
+}
+
+.dummy-user-contact-info {
+    background: #F0FDF4;
+    border-right: 1px solid #E2E8F0;
+}
+
+.dummy-user-company-info {
+    background: #FFFDF5;
+    border-right: 1px solid #E2E8F0;
+}
+
+.dummy-user-additional-data {
+    background: #FAF5FF;
+}
+
+.dummy-user-image {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 4px solid white;
+    box-shadow:
+            0 4px 12px rgba(0,0,0,0.08),
+            0 0 0 1px #E2E8F0;
+}
+
+.dummy-user-id {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #94A3B8;
+    text-align: center;
+}
+
+.dummy-user-name {
+    margin: 0;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1E293B;
+}
+
+.dummy-user-role {
+    margin: 0 0 1rem;
+    text-align: center;
+    color: #6366F1;
+    font-weight: 600;
+}
+
+.dummy-user-main-info p,
+.dummy-user-contact-info p,
+.dummy-user-company-info p,
+.dummy-user-additional-data p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: #475569;
+}
+
+.dummy-user-contact-info h3,
+.dummy-user-company-info h3,
+.dummy-user-bank-info h3,
+.dummy-user-crypto-info h3 {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.dummy-user-contact-info h3 {
+    color: #16A34A;
+}
+
+.dummy-user-company-info h3 {
+    color: #D97706;
+}
+
+.dummy-user-bank-info h3,
+.dummy-user-crypto-info h3 {
+    color: #9333EA;
+}
+
+.dummy-user-bank-info,
+.dummy-user-crypto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.dummy-user-bank-info {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #DDD6FE;
+}
+
+.dummy-user-role {
+    display: inline-block;
+    align-self: center;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: #EEF2FF;
+    color: #4F46E5;
+}
+
+.dummy-user-main-info p:hover,
+.dummy-user-contact-info p:hover,
+.dummy-user-company-info p:hover,
+.dummy-user-additional-data p:hover {
+    color: #0F172A;
+}
+
+@media (max-width: 1200px) {
+    .dummy-user-block {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dummy-user-main-info,
+    .dummy-user-contact-info {
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .dummy-user-company-info {
+        border-right: 1px solid #E2E8F0;
+    }
+}
+
+@media (max-width: 768px) {
+    .dummy-user-block {
+        grid-template-columns: 1fr;
+    }
+
+    .dummy-user-main-info,
+    .dummy-user-contact-info,
+    .dummy-user-company-info {
+        border-right: none;
+        border-bottom: 1px solid #E2E8F0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dummy-user-block {
+        transition: none;
+    }
+}

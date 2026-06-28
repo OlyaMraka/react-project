@@ -1,0 +1,25 @@
+.dummy-users {
+    background: white;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.dummy-users-container {
+    column-width: 300px;
+    column-gap: 20px;
+}
+
+.dummy-user-block {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
+
+.quantity-info {
+    display: flex;
+    gap: 15px;
+    color: midnightblue;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
