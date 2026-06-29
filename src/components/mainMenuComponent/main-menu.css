@@ -1,0 +1,36 @@
+.main-menu-block {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0 32px;
+}
+
+.main-menu-block ul {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu-block li a {
+    display: block;
+    padding: 16px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.main-menu-block li a:hover {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+}
+
+.main-menu-block li a.active {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+    font-weight: 600;
+}
